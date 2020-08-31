@@ -1,1 +1,2 @@
 # FlightSearchNewshore
+Primero se deber reestablecer la BD en SqlServer, la cual tiene por nombre Flight.bak y se encuentra en una carpeta llamada BD dentro del repositorio. Una vez reestablecido ya se puede ejecutar el proyecto
