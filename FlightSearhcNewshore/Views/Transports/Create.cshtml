@@ -1,0 +1,56 @@
+﻿@model FlightSearhcNewshore.Models.Transport
+
+@{
+    ViewBag.Title = "Flight confirmation";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<div class="form-horizontal">
+    <hr />
+
+    <div class="form-group">
+
+        <div class="row">
+            <div class="input-field col s4">
+                <input disabled value="@Html.Raw(ViewBag.Vuelo)" id="disabled" type="text" class="validate">
+                <label for="disabled">Flight Number</label>
+            </div>
+            <div class="input-field col s4">
+                <input disabled value="@Html.Raw(ViewBag.Origin)" id="disabled" type="text" class="validate">
+                <label for="disabled">Origin</label>
+            </div>
+            <div class="input-field col s4">
+                <input disabled value="@Html.Raw(ViewBag.Destination)" id="disabled" type="text" class="validate">
+                <label for="disabled">Destination</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s4">
+                <input disabled value="@Html.Raw(ViewBag.Date)" id="disabled" type="text" class="validate">
+                <label for="disabled">Date</label>
+            </div>
+            <div class="input-field col s4">
+                <input disabled value="@Html.Raw(ViewBag.Price)" id="disabled" type="text" class="validate">
+                <label for="disabled">Prices</label>
+            </div>
+            <div class="input-field col s4">
+                <input disabled value="@Html.Raw(ViewBag.Currency)" id="disabled" type="text" class="validate">
+                <label for="disabled">Currency</label>
+            </div>
+        </div>
+
+    </div>
+    <hr />
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Confirm" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}

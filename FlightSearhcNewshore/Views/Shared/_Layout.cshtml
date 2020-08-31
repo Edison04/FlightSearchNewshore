@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <script src="~/Scripts/materialize.js"></script>
+    <link href="~/Content/materialize.css" rel="stylesheet" />
+    <script src="~/Scripts/GeneralScripts.js"></script> 
+    <link href="~/Content/GeneralStyles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo light">AIRLINE</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>@Html.ActionLink("Main Page","Index","Home")</li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        @*<hr />*@
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Flight Search</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FlightModelStoreContainer" CdmEntityContainer="FlightEntities">
+    <EntitySetMapping Name="Flight">
+      <EntityTypeMapping TypeName="FlightModel.Flight">
+        <MappingFragment StoreEntitySet="Flight">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DepartureStation" ColumnName="DepartureStation" />
+          <ScalarProperty Name="ArribalStation" ColumnName="ArribalStation" />
+          <ScalarProperty Name="DepartureDate" ColumnName="DepartureDate" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="IdTransport" ColumnName="IdTransport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transport">
+      <EntityTypeMapping TypeName="FlightModel.Transport">
+        <MappingFragment StoreEntitySet="Transport">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FlightNumber" ColumnName="FlightNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

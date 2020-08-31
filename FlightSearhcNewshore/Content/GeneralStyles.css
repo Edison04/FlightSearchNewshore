@@ -1,0 +1,16 @@
+﻿.page {
+    text-align: center;
+}
+
+.nav-wrapper, .datepicker-date-display, .btn {
+    background-color: #575091;
+}
+
+.datepicker-cancel, .datepicker-done, .datepicker-table td.is-today,
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #575091;
+}
+
+.datepicker-table td.is-selected, .btn:focus, .btn:hover {
+    background-color: #877CE1;
+}
